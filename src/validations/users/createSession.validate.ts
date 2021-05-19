@@ -6,8 +6,8 @@ export default async ({ password, email, }: CreateSessionDTO): Promise<void> => 
 
   try {
     const schema = Joi.object({
-      genre_id: Joi.string().required().uuid(),
-      movie_id: Joi.string().required().uuid(),
+      email: Joi.string().email().required(),
+      password: Joi.string().required(),
     });
   
     await schema.validateAsync({

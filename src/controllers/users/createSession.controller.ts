@@ -13,7 +13,7 @@ export default class CreateSessionController {
       const { email, password } = request.body;
 
       const authenticateUserService = new AuthenticateUserService(usersRepository);
-
+      
       const { user, token } = await authenticateUserService.execute({
         email,
         password,

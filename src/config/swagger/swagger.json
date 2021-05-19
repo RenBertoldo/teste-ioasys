@@ -133,7 +133,7 @@
           },
           "delete": {
               "tags": [
-                  "user"
+                  "user admin"
               ],
               "summary": "Delete a User admin",
               "description": "delete a user admin",
