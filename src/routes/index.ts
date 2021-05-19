@@ -16,6 +16,6 @@ routes.use('/people', peopleRoute);
 routes.use('/admin', adminRoute);
 routes.use('/users', usersRoute);
 routes.use('/sessions', sessionsRoute);
-routes.use('/votes', peopleRoute);
+routes.use('/votes', votesRoute);
 
 export default routes;
